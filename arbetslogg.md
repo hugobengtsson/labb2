@@ -18,4 +18,6 @@
 - Tagit bort "Exempelsida" och första blogginlägget från Wordpress.
 - Lagt till två blogginlägg.
 - Hook för att ta bort onödiga fält i kassan.
-- 
+- Hook för att lägga till en text på produktarkiv-sidan. 
+- Template override med archive-product.php
+    - Ändringen innefattar tillagd symbol efter titeln där archive-product.php används.
