@@ -1,6 +1,17 @@
 <?php
 
 
+
+add_action( 'wp', 'remove_storefront_credits' );
+
+function remove_storefront_credits() {
+    // Hook for removing the built in footer-text from Storefront.
+    remove_action( 'storefront_footer', 'storefront_credit', 20 );
+}
+
+
+
+
 // Hook for changing the text on the admin-page. 
 add_filter('admin_footer_text', 'change_footer_admin');
 
