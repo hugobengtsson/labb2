@@ -17,3 +17,5 @@
 - Lagt till tre olika footers för de olika delarna på sidan.
 - Tagit bort "Exempelsida" och första blogginlägget från Wordpress.
 - Lagt till två blogginlägg.
+- Hook för att ta bort onödiga fält i kassan.
+- 
