@@ -29,12 +29,27 @@ function remove_cart_fields() {
 
 }
 
+// Hook for adding text to product archive page.
+add_action('woocommerce_before_shop_loop', 'add_text_product_archive');
 
-add_action( 'wp', 'remove_storefront_credits' );
+function add_text_product_archive() {
+    echo '<h1>Här ser du produkterna:</h1>';
+}
+
+
+add_action('wp', 'remove_storefront_credits');
 
 function remove_storefront_credits() {
     // Hook for removing the built in footer-text from Storefront.
-    remove_action( 'storefront_footer', 'storefront_credit', 20 );
+    remove_action('storefront_footer', 'storefront_credit', 20);
+}
+
+
+// Hook for the footer, low priority.
+add_action('storefront_footer', 'add_footer_text', 70);
+
+function add_footer_text() {
+    echo '<p style="margin-top:20px; text-align:center;">&copy 2022 Blixten</p>';
 }
 
 
