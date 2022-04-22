@@ -21,3 +21,17 @@
 - Hook för att lägga till en text på produktarkiv-sidan. 
 - Template override med archive-product.php
     - Ändringen innefattar tillagd symbol efter titeln där archive-product.php används.
+- Lagt till bild och nedladdnings-fil till den nedladdningsbara produkten.
+- Lagt till plugin i eget GitHub-repo. 
+    - Plugin lägger till ett leveransalternativ för att leverera med drönare. 
+    - Att göra:
+        - Uppdatera funktionsnamn så att de följer samma namn.
+- Skapar repo för ERP-systemet.
+- Skapar initial filstruktur.
+- Initial styling. 
+- Lagt till funktionalitet för att hämta från API:et.
+
+### 2022-04-21:
+- Vidareutveckling av API-hämtning och rendering. 
+- Rendering av blogginlägg.
+- Letat efter lösning för nonce-nyckeln.  
