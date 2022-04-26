@@ -31,7 +31,20 @@
 - Initial styling. 
 - Lagt till funktionalitet för att hämta från API:et.
 
-### 2022-04-21:
+### 2022-04-22:
 - Vidareutveckling av API-hämtning och rendering. 
 - Rendering av blogginlägg.
 - Letat efter lösning för nonce-nyckeln.  
+
+
+### 2022-04-25:
+- Vidareutveckling av API-hämtning och rendering.
+    - Rendering för produkter och ordrar. 
+    - För produkter och ordrar så finns det hårdkodade objekt i JS-filerna. Fetchen fungerar även med en färsk nonce-nyckel. Som behöver uppdateras i controllern för respektive kategori. Det går att hämta Posts direkt från WordPress då det inte kräver autensiering. 
+- Lagt till ta bort hämtning på samtliga fält för att kunna tömma fältet från hämtade "objekt". 
+- Lagt till "spinner"-funktionalitet för att se när sidan gör sin hämtning. 
+
+
+### 2022-04-25:
+- Lagt till kommentarer till all kod.
+- Uppdaterat plugin-koden så att funktionsnamn stämmer överens med vad funktionerna gör. 
